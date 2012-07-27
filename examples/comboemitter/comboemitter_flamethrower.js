@@ -205,7 +205,7 @@ Fireworks.ComboEmitter.Flamethrower.prototype._flamejetCtor	= function(){
 					.onIntensityChange(function(newIntensity, oldIntensity){
 						//console.log('onIntensityChange', arguments, this) 
 						var effect		= this.emitter().effectByName('velocity');
-						effect.opts.speed	= 20 + 10 * newIntensity;
+						effect.opts.speed	= 30 * newIntensity;
 					}).back()
 				.createEffect("blablaTOREMOVE")
 					.onIntensityChange(function(newIntensity, oldIntensity){
